@@ -63,7 +63,7 @@ const ItemView = (props) => {
       },
       "offers": {
         "@type": "Offer",
-        "url": 'https://giftmatters.co/${slugify(product.name)}',
+        "url": "https://giftmatters.co/${slugify(product.name)}",
         "priceCurrency": "SGD",
         "price": "${product.price}",
         "priceValidUntil": "2024-11-20",
