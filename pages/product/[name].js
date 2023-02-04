@@ -35,7 +35,7 @@ const ItemView = (props) => {
       "@type": "Product",
       "name": "${product.name}",
       "image": [
-        'https://giftmatters.co/${product.name}'
+        "https://giftmatters.co/${product.name}"
        ],
       "description": "${product.description}",
       "sku": "0446310786",
