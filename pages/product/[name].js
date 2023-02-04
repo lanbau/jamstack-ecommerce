@@ -33,11 +33,11 @@ const ItemView = (props) => {
       __html: `{
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": ${product.name},
+      "name": "${product.name}",
       "image": [
         'https://giftmatters.co/${product.name}'
        ],
-      "description": ${product.description},
+      "description": "${product.description}",
       "sku": "0446310786",
       "mpn": "925872",
       "brand": {
@@ -65,7 +65,7 @@ const ItemView = (props) => {
         "@type": "Offer",
         "url": 'https://giftmatters.co/${slugify(product.name)}',
         "priceCurrency": "SGD",
-        "price": ${product.price},
+        "price": "${product.price}",
         "priceValidUntil": "2024-11-20",
         "itemCondition": "https://schema.org/NewCondition",
         "availability": "https://schema.org/InStock"
