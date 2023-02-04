@@ -33,18 +33,16 @@ const ItemView = (props) => {
       __html: `{
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "Executive Anvil",
+      "name": ${product.name},
       "image": [
-        "https://example.com/photos/1x1/photo.jpg",
-        "https://example.com/photos/4x3/photo.jpg",
-        "https://example.com/photos/16x9/photo.jpg"
+        'https://giftmatters.co/${product.name}'
        ],
-      "description": "Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height.",
+      "description": ${product.description},
       "sku": "0446310786",
       "mpn": "925872",
       "brand": {
         "@type": "Brand",
-        "name": "ACME"
+        "name": "Giftmatters"
       },
       "review": {
         "@type": "Review",
@@ -55,7 +53,7 @@ const ItemView = (props) => {
         },
         "author": {
           "@type": "Person",
-          "name": "Fred Benson"
+          "name": "Avoreco"
         }
       },
       "aggregateRating": {
@@ -65,11 +63,11 @@ const ItemView = (props) => {
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://example.com/anvil",
-        "priceCurrency": "USD",
-        "price": "119.99",
-        "priceValidUntil": "2020-11-20",
-        "itemCondition": "https://schema.org/UsedCondition",
+        "url": 'https://giftmatters.co/${slugify(item.name)}',
+        "priceCurrency": "SGD",
+        "price": ${product.price},
+        "priceValidUntil": "2024-11-20",
+        "itemCondition": "https://schema.org/NewCondition",
         "availability": "https://schema.org/InStock"
       }
     }
